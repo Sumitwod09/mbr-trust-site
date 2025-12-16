@@ -63,13 +63,13 @@ const Footer = () => {
               <li className="flex items-start gap-3">
                 <Phone className="w-5 h-5 text-secondary mt-0.5" />
                 <div>
-                  <p className="text-primary-foreground/80">+91 98765 43210</p>
-                  <p className="text-primary-foreground/80">+91 98765 43211</p>
+                  <p className="text-primary-foreground/80">+91 982128 2719</p>
+                  <p className="text-primary-foreground/80">+91 86198 63180</p>
                 </div>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="w-5 h-5 text-secondary mt-0.5" />
-                <p className="text-primary-foreground/80">info@mbrvastukalp.com</p>
+                <p className="text-primary-foreground/80">mbrvastukalp@gmail.com</p>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-secondary mt-0.5" />

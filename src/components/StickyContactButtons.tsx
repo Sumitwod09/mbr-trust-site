@@ -1,7 +1,7 @@
 import { Phone, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-const PHONE_NUMBER = "+919876543210";
+const PHONE_NUMBER = "+919821282719";
 const WHATSAPP_MESSAGE = encodeURIComponent("Hello! I'm interested in your construction services. Please contact me.");
 
 const StickyContactButtons = () => {

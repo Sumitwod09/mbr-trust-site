@@ -3,19 +3,19 @@ import { Quote, Award, Users } from "lucide-react";
 
 const founders = [
   {
-    name: "Mr. Mahesh Bhagat",
+    name: "Mr. Mahender Kumar",
     role: "Founder & Managing Director",
-    initial: "MB",
-    experience: "30+ years",
-    description: "With over three decades of experience in the construction industry, Mr. Mahesh Bhagat founded MBR Vastukalp with a vision to deliver excellence. His expertise in civil engineering and project management has been the cornerstone of the company's success.",
+    initial: "MK",
+    experience: "25+ years",
+    description: "With over three decades of experience in the construction industry, Mr. Mahender Kumar founded MBR Vastukalp with a vision to deliver excellence. His expertise in civil engineering and project management has been the cornerstone of the company's success.",
     quote: "Quality is not just a standard; it's a promise we make to every client.",
   },
   {
-    name: "Mr. Rajesh Bhagat",
+    name: "Mr. Vikas Kumar",
     role: "Co-Founder & Technical Director",
-    initial: "RB",
-    experience: "25+ years",
-    description: "Mr. Rajesh Bhagat brings technical excellence and innovation to MBR Vastukalp. His deep understanding of modern construction techniques and materials ensures that every project benefits from the latest industry advancements.",
+    initial: "VK",
+    experience: "5+ years",
+    description: "Mr. Vikas Kumar brings technical excellence and innovation to MBR Vastukalp. His deep understanding of modern construction techniques and materials ensures that every project benefits from the latest industry advancements.",
     quote: "Innovation and tradition must work together to build structures that last generations.",
   },
 ];

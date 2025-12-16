@@ -74,8 +74,8 @@ const Contact = () => {
   };
 
   const contactInfo = [
-    { icon: Phone, title: "Phone", content: ["+91 98765 43210", "+91 98765 43211"] },
-    { icon: Mail, title: "Email", content: ["info@mbrvastukalp.com", "support@mbrvastukalp.com"] },
+    { icon: Phone, title: "Phone", content: ["+91 98212 82719", "+91 86198 63180"] },
+    { icon: Mail, title: "Email", content: ["mbrvastukalp@gmail.com"] },
     { icon: MapPin, title: "Address", content: ["Mumbai, Maharashtra", "India"] },
     { icon: Clock, title: "Working Hours", content: ["Mon - Sat: 9AM - 7PM", "Sunday: Closed"] },
   ];
