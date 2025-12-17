@@ -1,4 +1,6 @@
-import { Phone, MessageCircle } from "lucide-react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faWhatsapp } from "@fortawesome/free-brands-svg-icons";
 import { Button } from "@/components/ui/button";
 
 const PHONE_NUMBER = "+919821282719";
@@ -23,7 +25,7 @@ const StickyContactButtons = () => {
         className="rounded-full animate-pulse-glow"
         aria-label="Contact via WhatsApp"
       >
-        <MessageCircle className="w-6 h-6" />
+        <FontAwesomeIcon icon={faWhatsapp} className="w-6 h-6" />
       </Button>
 
       {/* Call Button */}
@@ -34,7 +36,7 @@ const StickyContactButtons = () => {
         className="rounded-full"
         aria-label="Call us directly"
       >
-        <Phone className="w-6 h-6" />
+        <FontAwesomeIcon icon={faPhone} className="w-6 h-6" />
       </Button>
     </div>
   );

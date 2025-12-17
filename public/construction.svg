@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <rect width="100%" height="100%" fill="#f97316"/>
+  <g fill="white" font-family="Arial, Helvetica, sans-serif">
+    <text x="50%" y="35%" dominant-baseline="middle" text-anchor="middle" font-size="36">Construction</text>
+    <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-size="20">Site Photo Placeholder</text>
+  </g>
+</svg>
