@@ -29,18 +29,6 @@ const services = [
     features: ["Pipe installation", "Leak repair", "Drain cleaning", "Water heater services", "Bathroom remodeling"],
   },
   {
-    icon: Hammer,
-    name: "Civil",
-    description: "Comprehensive civil construction works including new construction, extensions, and renovations. Quality craftsmanship in every project.",
-    features: ["New construction", "Building extensions", "Renovations", "Masonry work", "Concrete works"],
-  },
-  {
-    icon: Wrench,
-    name: "Carpentry",
-    description: "Custom carpentry and woodwork services. From furniture to fixtures, our skilled carpenters bring your vision to life.",
-    features: ["Custom furniture", "Cabinet making", "Door & window fitting", "Wooden flooring", "Repair & restoration"],
-  },
-  {
     icon: PaintBucket,
     name: "Painting & Polishing",
     description: "Transform your space with our professional painting services. Interior and exterior painting with premium quality finishes.",
