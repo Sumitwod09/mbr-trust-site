@@ -3,19 +3,19 @@ import { Quote, Award, Users } from "lucide-react";
 
 const founders = [
   {
-    name: "Mr. Mahender Kumar",
+    name: "Mr. Mahender Rajak",
     role: "Founder & Managing Director",
     initial: "MK",
     experience: "25+ years",
-    description: "With over three decades of experience in the construction industry, Mr. Mahender Kumar founded MBR Vastukalp with a vision to deliver excellence. His expertise in civil engineering and project management has been the cornerstone of the company's success.",
+    description: "With over three decades of experience in the construction industry, Mr. Mahender Rajak founded MBR Vastukalp with a vision to deliver excellence. His expertise in civil engineering and project management has been the cornerstone of the company's success.",
     quote: "Quality is not just a standard; it's a promise we make to every client.",
   },
   {
-    name: "Mr. Vikas Kumar",
+    name: "Mr. Vikas Rajak",
     role: "Co-Founder & Technical Director",
     initial: "VK",
     experience: "5+ years",
-    description: "Mr. Vikas Kumar brings technical excellence and innovation to MBR Vastukalp. His deep understanding of modern construction techniques and materials ensures that every project benefits from the latest industry advancements.",
+    description: "Mr. Vikas Rajak brings technical excellence and innovation to MBR Vastukalp. His deep understanding of modern construction techniques and materials ensures that every project benefits from the latest industry advancements.",
     quote: "Innovation and tradition must work together to build structures that last generations.",
   },
 ];
