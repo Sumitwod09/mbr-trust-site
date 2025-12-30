@@ -6,7 +6,7 @@ const founders = [
     name: "Mr. Mahender Rajak",
     role: "Founder & Managing Director",
     initial: "MK",
-    experience: "25+ years",
+    experience: "30+ years",
     description: "With over three decades of experience in the construction industry, Mr. Mahender Rajak founded MBR Vastukalp with a vision to deliver excellence. His expertise in civil engineering and project management has been the cornerstone of the company's success.",
     quote: "Quality is not just a standard; it's a promise we make to every client.",
   },

@@ -25,7 +25,7 @@ const StickyContactButtons = () => {
         className="rounded-full animate-pulse-glow"
         aria-label="Contact via WhatsApp"
       >
-        <FontAwesomeIcon icon={faWhatsapp} className="w-8 h-8" />
+        <FontAwesomeIcon icon={faWhatsapp} className="w-12 h-12" />
       </Button>
 
       {/* Call Button */}
