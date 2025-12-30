@@ -25,7 +25,7 @@ const About = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">About MBR Vastukalp</h1>
             <p className="text-xl text-primary-foreground/80">
-              Building trust and excellence since 1999. Over 25 years of transforming visions into reality.
+              Your Vision, Our Expertise. Over 25 years of transforming visions into reality since 1999.
             </p>
           </div>
         </div>

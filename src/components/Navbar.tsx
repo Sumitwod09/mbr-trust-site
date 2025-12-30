@@ -29,7 +29,7 @@ const Navbar = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold text-primary">MBR Vastukalp</span>
-              <span className="text-xs text-muted-foreground">Building Trust Since 1999</span>
+              <span className="text-xs text-muted-foreground">Your Vision, Our Expertise.</span>
             </div>
           </Link>
 
