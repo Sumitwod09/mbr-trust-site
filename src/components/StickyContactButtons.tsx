@@ -33,7 +33,7 @@ const StickyContactButtons = () => {
         variant="call"
         size="iconLg"
         onClick={handleCall}
-        className="rounded-full"
+        className="rounded-full animate-pulse-glow"
         aria-label="Call us directly"
       >
         <FontAwesomeIcon icon={faPhone} className="w-8 h-8" />

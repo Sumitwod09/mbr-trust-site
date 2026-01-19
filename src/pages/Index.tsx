@@ -18,6 +18,7 @@ const stats = [
   { value: "25+", label: "Years Experience" },
   { value: "5000+", label: "Projects Completed" },
   { value: "3000+", label: "Happy Clients" },
+  { value: "95%+", label: "Retention Rate" },
   { value: "100%", label: "Client Satisfaction" },
 ];
 
@@ -46,17 +47,17 @@ const Index = () => {
               <Award className="w-4 h-4" />
               <span className="text-sm font-medium">25+ Years of Excellence</span>
             </div>
-            
+
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary-foreground mb-6 animate-fade-in-up delay-100 leading-tight">
               Building Dreams,<br />
               <span className="text-secondary">Creating Legacies</span>
             </h1>
-            
+
             <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 animate-fade-in-up delay-200 leading-relaxed max-w-2xl">
-              MBR Vastukalp is your trusted partner for construction, renovation, and maintenance. 
+              MBR Vastukalp is your trusted partner for construction, renovation, and maintenance.
               With over two decades of experience, we transform visions into reality with quality and integrity.
             </p>
-            
+
             <div className="flex flex-wrap gap-4 animate-fade-in-up delay-300">
               <Link to="/contact">
                 <Button variant="hero" size="xl" className="group">
@@ -81,7 +82,7 @@ const Index = () => {
       <section className="py-16 bg-card relative -mt-16 z-20">
         <div className="container mx-auto px-4">
           <div className="bg-card rounded-2xl shadow-strong p-8 md:p-12">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
               {stats.map((stat, index) => (
                 <div key={index} className="text-center">
                   <div className="text-3xl md:text-4xl font-bold text-primary mb-2">{stat.value}</div>
@@ -139,8 +140,8 @@ const Index = () => {
                 Why Choose <span className="text-secondary">MBR Vastukalp?</span>
               </h2>
               <p className="text-muted-foreground mb-8 leading-relaxed">
-                For over 25 years, we have been the cornerstone of trust and quality in the construction industry. 
-                Our commitment to excellence, combined with our experienced team, ensures every project 
+                For over 25 years, we have been the cornerstone of trust and quality in the construction industry.
+                Our commitment to excellence, combined with our experienced team, ensures every project
                 exceeds expectations.
               </p>
               <div className="space-y-6">

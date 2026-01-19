@@ -1,128 +1,174 @@
 import { Link } from "react-router-dom";
 import Layout from "@/components/Layout";
 import { Button } from "@/components/ui/button";
-import { Building, Trash2, Zap, Droplet, Hammer, Wrench, PaintBucket, Wind, ArrowRight, CheckCircle } from "lucide-react";
+import { Building, Trash2, Zap, Droplet, Hammer, Wrench, PaintBucket, Wind, ArrowRight, CheckCircle, Layers, Sofa, Paintbrush, Sparkles, Home } from "lucide-react";
 
 const services = [
   {
     icon: Building,
     name: "Civil Structure Repairing",
-    description: "Expert structural repairs and reinforcement services for buildings of all types. We diagnose and fix cracks, settlement issues, and structural weaknesses with precision.",
-    features: ["Foundation repair", "Crack sealing", "Waterproofing", "Structural reinforcement", "Load-bearing wall repairs"],
+    description: "Expert structural repairs and reinforcement services for buildings of all types. We diagnose and fix structural issues with precision and quality materials.",
+    features: [
+      "Micro Concreting",
+      "Concrete Casting",
+      "Rebarring",
+      "Re-Inforcement",
+      "Water Proofing Treatment",
+      "Sewage"
+    ],
   },
   {
     icon: Trash2,
     name: "Demolition",
-    description: "Safe, efficient, and environmentally responsible demolition services. From selective interior demolition to complete structure removal.",
-    features: ["Controlled demolition", "Debris removal", "Site clearing", "Salvage operations", "Environmental compliance"],
+    description: "Safe, efficient, and environmentally responsible demolition services. From selective interior demolition to complete structure removal with proper debris management.",
+    features: [
+      "Civil Structure Demolition (Slab, Beam, Column, Flooring)",
+      "Interior Work Demolition",
+      "Civil Demolition",
+      "Plumbing Demolition",
+      "POP/Gypsum Demolition",
+      "Carpentry Demolition",
+      "Electrical Demolition"
+    ],
+  },
+  {
+    icon: Hammer,
+    name: "Civil Finishing Work",
+    description: "High-quality civil finishing services that transform your space with precision and attention to detail. Expert installation and craftsmanship.",
+    features: [
+      "Tile & Marble Installation Section",
+      "Kitchen Counter & Work",
+      "Masonry Work (Brick)",
+      "Plaster Work",
+      "Water Proofing Treatment"
+    ],
+  },
+  {
+    icon: Layers,
+    name: "POP & Gypsum Work",
+    description: "Professional POP and gypsum solutions for modern interiors. Creating stunning aesthetic spaces with custom designs and textures.",
+    features: [
+      "POP Wall Panelling",
+      "Design Moulding & Texture",
+      "Gypsum Ceiling",
+      "Grid Ceiling",
+      "PVC Ceiling",
+      "Gypsum Partition"
+    ],
+  },
+  {
+    icon: Sofa,
+    name: "Carpentry & Loose Furniture Work",
+    description: "Fine carpentry services including custom furniture, modular solutions, and decorative woodwork tailored to your specifications.",
+    features: [
+      "Loose Furniture (Custom)",
+      "Design Wall Partition",
+      "Design Partition Work",
+      "Modular Cabinet (Storage)",
+      "Modular Work Station",
+      "Door Frame & Shutter",
+      "Sliding Door & Window",
+      "Modular/Modern Bed",
+      "Reception Table",
+      "Vanity Counter",
+      "Modular Kitchen"
+    ],
   },
   {
     icon: Zap,
-    name: "Electrical",
-    description: "Complete electrical solutions from new installations to repairs and upgrades. Our certified electricians ensure safety and efficiency.",
-    features: ["Wiring & rewiring", "Panel upgrades", "Lighting installation", "Safety inspections", "Smart home systems"],
-  },
-  {
-    icon: Droplet,
-    name: "Plumbing",
-    description: "Professional plumbing services for residential and commercial properties. Expert installation, repair, and maintenance of all plumbing systems.",
-    features: ["Pipe installation", "Leak repair", "Drain cleaning", "Water heater services", "Bathroom remodeling"],
-  },
-  {
-    icon: PaintBucket,
-    name: "Painting & Polishing",
-    description: "Transform your space with our professional painting services. Interior and exterior painting with premium quality finishes.",
-    features: ["Interior painting", "Exterior painting", "Texture finishes", "Waterproof coatings", "Wood finishing"],
+    name: "Electrical Work (Residential & Commercial)",
+    description: "Complete electrical solutions from new installations to repairs and upgrades. Our certified electricians ensure safety, efficiency, and compliance.",
+    features: [
+      "Power Wiring & Conductivity",
+      "Data Wiring & Conductivity",
+      "Networking Conductivity",
+      "DB Installation & Fixing",
+      "Earthing Installation"
+    ],
   },
   {
     icon: Wind,
     name: "HVAC",
-    description: "Heating, ventilation, and air conditioning services. Installation, repair, and maintenance for optimal indoor comfort.",
-    features: ["AC installation", "Heating systems", "Ventilation solutions", "Maintenance plans", "Energy efficiency upgrades"],
+    description: "Heating, ventilation, and air conditioning services. Installation, repair, and maintenance for optimal indoor comfort and energy efficiency.",
+    features: [
+      "AC installation",
+      "Heating systems",
+      "Ventilation solutions",
+      "Maintenance plans",
+      "Energy efficiency upgrades"
+    ],
   },
   {
-    icon: Building,
-    name: "Polymer & Micro Concrete",
-    description: "Advanced polymer and micro concrete solutions for durable, waterproof finishes. Perfect for modern construction and repair needs.",
-    features: ["Polymer coatings", "Micro concrete overlays", "Waterproofing", "Self-leveling floors", "Durability enhancement"],
+    icon: Home,
+    name: "Modern Wall Panelling",
+    description: "Contemporary wall paneling solutions for accent walls and interior design enhancement. Multiple material options with professional installation.",
+    features: [
+      "PVC wall panels",
+      "Wooden panels",
+      "Acoustic panels",
+      "Decorative finishes",
+      "Professional installation"
+    ],
   },
   {
-    icon: Hammer,
-    name: "Civil Works & Masonry",
-    description: "Expert civil construction and masonry services including structural work, brickwork, and stone installation.",
-    features: ["Brickwork", "Stone masonry", "Structural framing", "Load-bearing walls", "Quality finishing"],
+    icon: Droplet,
+    name: "Plumbing (Residential & Commercial)",
+    description: "Professional plumbing services for residential and commercial properties. Expert installation, repair, and maintenance of all water supply systems.",
+    features: [
+      "Sanity Water Supply Line",
+      "Domestic Water Supply Line",
+      "Commercial Water Supply Line",
+      "Portable Water Supply System"
+    ],
   },
   {
     icon: Wrench,
-    name: "Tiles & Marble Installation",
-    description: "Professional installation of premium tiles and marble for floors, walls, and decorative surfaces. Expert finishing and detailing.",
-    features: ["Ceramic tile installation", "Marble laying", "Granite work", "Mosaic designs", "Grout & sealant finishing"],
+    name: "Fabrication Work",
+    description: "Custom metal and structural fabrication services for architectural elements, safety features, and space optimization solutions.",
+    features: [
+      "Mezzanine Floor Making",
+      "Loft Work",
+      "Staircase Work",
+      "Grill Work",
+      "Railing Work"
+    ],
   },
   {
     icon: PaintBucket,
-    name: "Plaster Works",
-    description: "High-quality plaster application and finishing for smooth, durable wall surfaces. Interior and exterior plastering services.",
-    features: ["Gypsum plaster", "Cement plaster", "Decorative finishes", "Smooth wall finishing", "Crack repair"],
+    name: "Painting (Exterior & Interior)",
+    description: "Transform your space with our professional painting services. Interior and exterior painting with premium quality finishes and expert application.",
+    features: [
+      "Primar Paintwork",
+      "Oil Paint Work",
+      "Luster Paint Work",
+      "Royal Paint Work",
+      "Plastic Paint Work",
+      "Art Paint Work"
+    ],
   },
   {
-    icon: Wrench,
-    name: "Carpentry & Custom Woodwork",
-    description: "Fine carpentry services including custom furniture, fixtures, and decorative woodwork tailored to your specifications.",
-    features: ["Custom furniture", "Built-in cabinets", "Trim & molding", "Door installation", "Quality finishing"],
+    icon: Paintbrush,
+    name: "Polishing (Exterior & Interior)",
+    description: "Expert polishing services for furniture and surfaces with premium finish quality. Enhance beauty and durability with professional techniques.",
+    features: [
+      "PU Polish Work",
+      "Mela Mite Polish",
+      "Texture Polish Work",
+      "Matte Polish Work",
+      "Clear Polish Work"
+    ],
   },
   {
-    icon: Building,
-    name: "Wall Paneling",
-    description: "Modern wall paneling solutions for accent walls and interior design enhancement. Multiple material options available.",
-    features: ["PVC wall panels", "Wooden panels", "Acoustic panels", "Decorative finishes", "Professional installation"],
-  },
-  {
-    icon: Wrench,
-    name: "Modular Kitchen & Workstation",
-    description: "Custom-designed modular kitchens and workstations that maximize space and functionality with premium finishes.",
-    features: ["Kitchen design & layout", "Modular cabinetry", "Hardware installation", "Quartz countertops", "Professional assembly"],
-  },
-  {
-    icon: PaintBucket,
-    name: "Melamine & PU Polish",
-    description: "Professional melamine and polyurethane polishing services for furniture and surfaces with premium finish quality.",
-    features: ["Melamine polish", "PU polish application", "High gloss finish", "Scratch resistance", "Color options"],
-  },
-  {
-    icon: PaintBucket,
-    name: "Wooden Polish & Finishing",
-    description: "Expert wooden surface polishing and finishing to enhance beauty and durability of wooden furniture and floors.",
-    features: ["French polish", "Lacquer finish", "Wooden floor polishing", "Furniture restoration", "Stain treatment"],
-  },
-  {
-    icon: Building,
-    name: "POP Works",
-    description: "Plain Old Plaster (POP) design and installation for ceiling and wall decorations. Creating stunning aesthetic spaces.",
-    features: ["Ceiling designs", "Wall decorations", "Textured finishes", "Custom moldings", "Professional finishing"],
-  },
-  {
-    icon: Wind,
-    name: "Gypsum Ceiling",
-    description: "Modern gypsum ceiling installation for residential and commercial spaces. Clean, professional finishes with acoustic options.",
-    features: ["Suspended ceilings", "Acoustic panels", "Recessed lighting", "Custom designs", "Sound dampening"],
-  },
-  {
-    icon: Building,
-    name: "Gypsum Partition & Grid Ceiling",
-    description: "Flexible gypsum partition systems and modular grid ceiling solutions for modern office and residential layouts.",
-    features: ["Demountable partitions", "Grid ceiling systems", "Fire-rated options", "Acoustic properties", "Easy installation"],
-  },
-  {
-    icon: Wrench,
-    name: "Fabrication Works",
-    description: "Custom metal and structural fabrication services for railings, gates, structures, and architectural elements.",
-    features: ["Metal fabrication", "Custom designs", "Welding services", "Finishing & coating", "Installation"],
-  },
-  {
-    icon: Building,
-    name: "Staircase, Grill & Loft",
-    description: "Custom design and installation of staircases, safety grills, and loft structures with premium quality materials.",
-    features: ["Steel staircases", "Wooden stairs", "Decorative grills", "Loft structures", "Custom railings"],
+    icon: Sparkles,
+    name: "Modern Finishing Work",
+    description: "Contemporary finishing solutions for floors and surfaces. Premium materials and expert installation for lasting beauty and functionality.",
+    features: [
+      "Frosted Film",
+      "Vinyl Flooring",
+      "Wooden Flooring",
+      "PVC Flooring",
+      "Epoxy Flooring"
+    ],
   },
 ];
 
@@ -148,9 +194,8 @@ const Services = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className={`grid md:grid-cols-2 gap-8 items-center ${
-                  index % 2 === 1 ? "md:flex-row-reverse" : ""
-                }`}
+                className={`grid md:grid-cols-2 gap-8 items-center ${index % 2 === 1 ? "md:flex-row-reverse" : ""
+                  }`}
               >
                 <div className={index % 2 === 1 ? "md:order-2" : ""}>
                   <div className="flex items-center gap-4 mb-4">

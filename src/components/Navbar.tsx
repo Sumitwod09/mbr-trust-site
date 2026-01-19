@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Building2 } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const navLinks = [
   { name: "Home", path: "/" },
   { name: "About", path: "/about" },
-  { name: "Gallery", path: "/gallery" },
   { name: "Services", path: "/services" },
+  { name: "Gallery", path: "/gallery" },
   { name: "Founders", path: "/founders" },
   { name: "Contact Us", path: "/contact" },
 ];
@@ -23,14 +23,13 @@ const Navbar = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-12 h-12 bg-gradient-primary rounded-lg flex items-center justify-center group-hover:scale-105 transition-transform">
-              <Building2 className="w-7 h-7 text-primary-foreground" />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-primary">MBR Vastukalp</span>
-              <span className="text-xs text-muted-foreground">Your Vision, Our Expertise.</span>
-            </div>
+          <Link to="/" className="flex items-center gap-2 sm:gap-3 group">
+            <img
+              src="/MBR_logo.png"
+              alt="MBR Vastukalp Logo"
+              className="h-12 sm:h-14 md:h-16 lg:h-18 w-auto object-contain group-hover:scale-105 transition-all duration-300 drop-shadow-lg"
+              style={{ filter: 'drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15))' }}
+            />
           </Link>
 
           {/* Desktop Navigation */}
@@ -39,11 +38,10 @@ const Navbar = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
-                  isActive(link.path)
-                    ? "bg-primary text-primary-foreground"
-                    : "text-foreground hover:bg-muted hover:text-primary"
-                }`}
+                className={`px-4 py-2 rounded-lg font-medium transition-all duration-300 ${isActive(link.path)
+                  ? "bg-primary text-primary-foreground"
+                  : "text-foreground hover:bg-muted hover:text-primary"
+                  }`}
               >
                 {link.name}
               </Link>
@@ -78,11 +76,10 @@ const Navbar = () => {
                   key={link.path}
                   to={link.path}
                   onClick={() => setIsOpen(false)}
-                  className={`px-4 py-3 rounded-lg font-medium transition-all ${
-                    isActive(link.path)
-                      ? "bg-primary text-primary-foreground"
-                      : "text-foreground hover:bg-muted"
-                  }`}
+                  className={`px-4 py-3 rounded-lg font-medium transition-all ${isActive(link.path)
+                    ? "bg-primary text-primary-foreground"
+                    : "text-foreground hover:bg-muted"
+                    }`}
                 >
                   {link.name}
                 </Link>

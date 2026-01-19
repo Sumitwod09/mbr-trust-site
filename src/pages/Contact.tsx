@@ -66,7 +66,7 @@ const Contact = () => {
 
     setIsSubmitting(false);
     setIsSubmitted(true);
-    
+
     toast({
       title: "Message Sent Successfully!",
       description: "We'll get back to you within 24 hours.",
@@ -93,7 +93,7 @@ const Contact = () => {
                 Thank You!
               </h1>
               <p className="text-muted-foreground mb-8 animate-fade-in-up delay-100">
-                Your message has been received. Our team will contact you within 24 hours 
+                Your message has been received. Our team will contact you within 24 hours
                 to discuss your project requirements.
               </p>
               <Button onClick={() => setIsSubmitted(false)} variant="outline" size="lg" className="animate-fade-in-up delay-200">
@@ -215,8 +215,8 @@ const Contact = () => {
               <div>
                 <h2 className="text-2xl font-bold text-foreground mb-6">Get in Touch</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Have a project in mind or need maintenance services? We're here to help. 
-                  Reach out to us through any of the following channels, and our team will 
+                  Have a project in mind or need maintenance services? We're here to help.
+                  Reach out to us through any of the following channels, and our team will
                   respond promptly.
                 </p>
               </div>
@@ -236,13 +236,15 @@ const Contact = () => {
                   </div>
                 ))}
               </div>
+            </div>
+          </div>
 
-              {/* Map Placeholder */}
-              <div className="bg-muted rounded-2xl p-4 h-64 flex items-center justify-center">
-                <div className="text-center">
-                  <MapPin className="w-12 h-12 text-muted-foreground/30 mx-auto mb-2" />
-                  <p className="text-muted-foreground">Mumbai, Maharashtra, India</p>
-                </div>
+          {/* Map Section - Full Width */}
+          <div className="mt-12">
+            <div className="bg-muted rounded-2xl p-4 h-96 flex items-center justify-center">
+              <div className="text-center">
+                <MapPin className="w-12 h-12 text-muted-foreground/30 mx-auto mb-2" />
+                <p className="text-muted-foreground">Mumbai, Maharashtra, India</p>
               </div>
             </div>
           </div>
