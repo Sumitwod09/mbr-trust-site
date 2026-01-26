@@ -39,42 +39,30 @@ const About = () => {
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">Our Story</h2>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  MBR Vastukalp was founded in 1999 with a simple yet powerful vision: to provide 
-                  exceptional construction and renovation services that stand the test of time. What 
-                  started as a small family business has grown into one of the most trusted names in 
+                  MBR Vastukalp was founded in 1999 with a simple yet powerful vision: to provide
+                  exceptional construction and renovation services that stand the test of time. What
+                  started as a small family business has grown into one of the most trusted names in
                   the construction industry.
                 </p>
                 <p>
-                  Over the past 25 years, we have completed thousands of projects ranging from 
-                  residential renovations to large-scale commercial constructions. Our journey has 
+                  Over the past 25 years, we have completed thousands of projects ranging from
+                  residential renovations to large-scale commercial constructions. Our journey has
                   been marked by an unwavering commitment to quality, integrity, and customer satisfaction.
                 </p>
                 <p>
-                  Today, MBR Vastukalp continues to lead with innovation while staying true to the 
-                  values that built our reputation. Our team of skilled professionals brings expertise, 
+                  Today, MBR Vastukalp continues to lead with innovation while staying true to the
+                  values that built our reputation. Our team of skilled professionals brings expertise,
                   dedication, and passion to every project we undertake.
                 </p>
               </div>
             </div>
-            <div className="bg-muted rounded-2xl p-8">
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center p-6 bg-card rounded-xl shadow-soft">
-                  <div className="text-4xl font-bold text-primary mb-2">25+</div>
-                  <div className="text-muted-foreground">Years Experience</div>
-                </div>
-                <div className="text-center p-6 bg-card rounded-xl shadow-soft">
-                  <div className="text-4xl font-bold text-primary mb-2">5000+</div>
-                  <div className="text-muted-foreground">Projects Done</div>
-                </div>
-                <div className="text-center p-6 bg-card rounded-xl shadow-soft">
-                  <div className="text-4xl font-bold text-primary mb-2">200+</div>
-                  <div className="text-muted-foreground">Team Members</div>
-                </div>
-                <div className="text-center p-6 bg-card rounded-xl shadow-soft">
-                  <div className="text-4xl font-bold text-primary mb-2">100%</div>
-                  <div className="text-muted-foreground">Satisfaction</div>
-                </div>
-              </div>
+            <div className="relative">
+              <img
+                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2076&auto=format&fit=crop"
+                alt="MBR Vastukalp construction team working on a project"
+                className="rounded-2xl shadow-strong w-full h-auto object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-background/20 to-transparent rounded-2xl"></div>
             </div>
           </div>
         </div>
@@ -90,8 +78,8 @@ const About = () => {
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4">Our Vision</h3>
               <p className="text-muted-foreground leading-relaxed">
-                To be the most trusted and respected construction company, known for transforming 
-                spaces and lives through exceptional craftsmanship and sustainable practices. We 
+                To be the most trusted and respected construction company, known for transforming
+                spaces and lives through exceptional craftsmanship and sustainable practices. We
                 envision a future where every structure we build contributes to a better tomorrow.
               </p>
             </div>
@@ -101,8 +89,8 @@ const About = () => {
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4">Our Mission</h3>
               <p className="text-muted-foreground leading-relaxed">
-                To deliver unparalleled construction and renovation services that exceed client 
-                expectations. We are committed to using quality materials, employing skilled 
+                To deliver unparalleled construction and renovation services that exceed client
+                expectations. We are committed to using quality materials, employing skilled
                 professionals, and maintaining transparent communication throughout every project.
               </p>
             </div>
@@ -146,7 +134,7 @@ const About = () => {
             <div className="relative">
               {/* Timeline Line */}
               <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-secondary/30 transform md:-translate-x-1/2" />
-              
+
               {milestones.map((milestone, index) => (
                 <div key={index} className={`relative flex items-center mb-8 ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'}`}>
                   <div className={`w-full md:w-1/2 ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'} pl-12 md:pl-0`}>

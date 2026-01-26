@@ -76,7 +76,18 @@ const Index = () => {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center bg-gradient-hero overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: 'url(https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop)',
+          }}
+        >
+          {/* Lighter overlay for better image visibility */}
+          <div className="absolute inset-0 bg-gradient-to-r from-primary/80 via-primary/60 to-primary/50"></div>
+        </div>
+
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
@@ -288,8 +299,8 @@ const Index = () => {
                   key={index}
                   onClick={() => setCurrentTestimonial(index)}
                   className={`h-2 rounded-full transition-all duration-300 ${index === currentTestimonial
-                      ? "w-8 bg-secondary"
-                      : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                    ? "w-8 bg-secondary"
+                    : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
                     }`}
                   aria-label={`Go to testimonial ${index + 1}`}
                 />

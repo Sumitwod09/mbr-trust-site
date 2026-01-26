@@ -2,12 +2,15 @@ import { useEffect, useState } from "react";
 import Layout from "@/components/Layout";
 
 const images = [
-  { src: "/gallery-1.svg", caption: "Project Exterior" },
-  { src: "/gallery-2.svg", caption: "Interior Finish" },
-  { src: "/construction.svg", caption: "Construction Site" },
-  { src: "/gallery-4.svg", caption: "Completed Facade" },
-  { src: "/kitchen.svg", caption: "Kitchen Renovation" },
-  { src: "/gallery-6.svg", caption: "Project Detail" },
+  { src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2831&auto=format&fit=crop", caption: "Modern Building Exterior" },
+  { src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop", caption: "Luxury Interior Design" },
+  { src: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop", caption: "Construction Site Progress" },
+  { src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop", caption: "Completed Residential Project" },
+  { src: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop", caption: "Modern Kitchen Renovation" },
+  { src: "https://images.unsplash.com/photo-1600607687644-c7171b42498b?q=80&w=2070&auto=format&fit=crop", caption: "Commercial Building Facade" },
+  { src: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=2787&auto=format&fit=crop", caption: "Bathroom Renovation" },
+  { src: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop", caption: "Living Room Interior" },
+  { src: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=2070&auto=format&fit=crop", caption: "Office Space Design" },
 ];
 
 const Gallery = () => {

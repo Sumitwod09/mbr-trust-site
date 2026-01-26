@@ -15,12 +15,15 @@ const Footer = () => {
                 className="h-14 sm:h-16 w-auto object-contain drop-shadow-lg"
                 style={{ filter: 'drop-shadow(0 2px 8px rgba(255, 255, 255, 0.2))' }}
               />
-              <div className="flex flex-col justify-center gap-1">
-                <div className="inline-block">
-                  <h4 className="text-base sm:text-lg md:text-xl font-bold text-primary-foreground leading-none underline whitespace-nowrap">
+              <div className="flex flex-col justify-center">
+                <div className="w-min">
+                  <h4 className="text-base sm:text-lg md:text-xl font-bold text-primary-foreground leading-none underline whitespace-nowrap tracking-widest">
                     MBR VASTUKALP
                   </h4>
-                  <p className="text-[0.45rem] sm:text-[0.5rem] md:text-[0.55rem] text-primary-foreground/80 leading-tight text-justify">
+                  <p
+                    className="text-[0.45rem] sm:text-[0.5rem] md:text-[0.55rem] text-primary-foreground/80 leading-tight w-full tracking-tighter"
+                    style={{ textAlign: 'justify', textAlignLast: 'justify' }}
+                  >
                     Legacy in Every Layer. Trust in Every Project
                   </p>
                 </div>
