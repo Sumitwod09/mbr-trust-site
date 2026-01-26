@@ -22,10 +22,10 @@ const StickyContactButtons = () => {
         variant="whatsapp"
         size="iconLg"
         onClick={handleWhatsApp}
-        className="rounded-full animate-pulse-glow"
+        className="rounded-full animate-pulse-glow shadow-2xl hover:shadow-[0_0_40px_rgba(37,211,102,0.6)] transition-shadow duration-300"
         aria-label="Contact via WhatsApp"
       >
-        <FontAwesomeIcon icon={faWhatsapp} className="w-12 h-12" />
+        <FontAwesomeIcon icon={faWhatsapp} size="2x" style={{ width: '32px', height: '32px' }} className="drop-shadow-lg" />
       </Button>
 
       {/* Call Button */}
@@ -36,7 +36,7 @@ const StickyContactButtons = () => {
         className="rounded-full animate-pulse-glow"
         aria-label="Call us directly"
       >
-        <FontAwesomeIcon icon={faPhone} className="w-8 h-8" />
+        <FontAwesomeIcon icon={faPhone} size="2x" style={{ width: '32px', height: '32px' }} />
       </Button>
     </div>
   );

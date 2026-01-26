@@ -25,11 +25,21 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 sm:gap-3 group">
             <img
-              src="/MBR_logo.png"
+              src="/logo.png"
               alt="MBR Vastukalp Logo"
               className="h-12 sm:h-14 md:h-16 lg:h-18 w-auto object-contain group-hover:scale-105 transition-all duration-300 drop-shadow-lg"
               style={{ filter: 'drop-shadow(0 2px 8px rgba(0, 0, 0, 0.15))' }}
             />
+            <div className="flex flex-col justify-center gap-1">
+              <div className="inline-block">
+                <h3 className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold text-foreground leading-none underline whitespace-nowrap">
+                  MBR VASTUKALP
+                </h3>
+                <p className="text-[0.45rem] sm:text-[0.5rem] md:text-[0.55rem] lg:text-[0.6rem] text-muted-foreground leading-tight text-justify">
+                  Legacy in Every Layer. Trust in Every Project
+                </p>
+              </div>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}

@@ -10,11 +10,21 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <img
-                src="/MBR_logo.png"
+                src="/logo.png"
                 alt="MBR Vastukalp Logo"
-                className="h-16 w-auto object-contain drop-shadow-lg"
+                className="h-14 sm:h-16 w-auto object-contain drop-shadow-lg"
                 style={{ filter: 'drop-shadow(0 2px 8px rgba(255, 255, 255, 0.2))' }}
               />
+              <div className="flex flex-col justify-center gap-1">
+                <div className="inline-block">
+                  <h4 className="text-base sm:text-lg md:text-xl font-bold text-primary-foreground leading-none underline whitespace-nowrap">
+                    MBR VASTUKALP
+                  </h4>
+                  <p className="text-[0.45rem] sm:text-[0.5rem] md:text-[0.55rem] text-primary-foreground/80 leading-tight text-justify">
+                    Legacy in Every Layer. Trust in Every Project
+                  </p>
+                </div>
+              </div>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">
               Over 25 years of excellence in construction, renovation, and maintenance. Building trust, one project at a time.
@@ -22,7 +32,7 @@ const Footer = () => {
             {/* Social Media Links */}
             <div className="flex gap-4 mt-4">
               <a
-                href="https://www.instagram.com/mbrvastukalp"
+                href="https://www.instagram.com/mbr_vastukalp"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-primary-foreground/10 hover:bg-secondary rounded-lg flex items-center justify-center transition-all hover:scale-110"
@@ -33,7 +43,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://www.facebook.com/mbrvastukalp"
+                href="https://www.facebook.com/#"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-primary-foreground/10 hover:bg-secondary rounded-lg flex items-center justify-center transition-all hover:scale-110"
@@ -44,7 +54,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/company/mbrvastukalp"
+                href="https://www.linkedin.com/in/mbr-vastukalp-436b213a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 bg-primary-foreground/10 hover:bg-secondary rounded-lg flex items-center justify-center transition-all hover:scale-110"

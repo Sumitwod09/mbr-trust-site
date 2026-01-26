@@ -48,7 +48,7 @@ const services = [
     name: "POP & Gypsum Work",
     description: "Professional POP and gypsum solutions for modern interiors. Creating stunning aesthetic spaces with custom designs and textures.",
     features: [
-      "POP Wall Panelling",
+      "POP Wall Punning",
       "Design Moulding & Texture",
       "Gypsum Ceiling",
       "Grid Ceiling",
@@ -62,7 +62,7 @@ const services = [
     description: "Fine carpentry services including custom furniture, modular solutions, and decorative woodwork tailored to your specifications.",
     features: [
       "Loose Furniture (Custom)",
-      "Design Wall Partition",
+      "Design Wall Panelling",
       "Design Partition Work",
       "Modular Cabinet (Storage)",
       "Modular Work Station",
@@ -103,9 +103,9 @@ const services = [
     name: "Modern Wall Panelling",
     description: "Contemporary wall paneling solutions for accent walls and interior design enhancement. Multiple material options with professional installation.",
     features: [
-      "PVC wall panels",
-      "Wooden panels",
-      "Acoustic panels",
+      "PVC wall Panelling",
+      "Wooden Panelling",
+      "Acoustic Panelling",
       "Decorative finishes",
       "Professional installation"
     ],
@@ -115,7 +115,7 @@ const services = [
     name: "Plumbing (Residential & Commercial)",
     description: "Professional plumbing services for residential and commercial properties. Expert installation, repair, and maintenance of all water supply systems.",
     features: [
-      "Sanity Water Supply Line",
+      "Sanitary Water Supply Line",
       "Domestic Water Supply Line",
       "Commercial Water Supply Line",
       "Portable Water Supply System"

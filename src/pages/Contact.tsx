@@ -241,11 +241,17 @@ const Contact = () => {
 
           {/* Map Section - Full Width */}
           <div className="mt-12">
-            <div className="bg-muted rounded-2xl p-4 h-96 flex items-center justify-center">
-              <div className="text-center">
-                <MapPin className="w-12 h-12 text-muted-foreground/30 mx-auto mb-2" />
-                <p className="text-muted-foreground">Mumbai, Maharashtra, India</p>
-              </div>
+            <div className="bg-muted rounded-2xl overflow-hidden shadow-strong">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d301.70122566539334!2d72.90475346206789!3d19.024776402791264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c5f155ae4869%3A0x601e5b86abc19b58!2s2WF3%2BRXV%2C%20Vishnu%20Nagar%2C%20Chembur%2C%20Mumbai%2C%20Maharashtra%20400074!5e1!3m2!1sen!2sin!4v1769415520150!5m2!1sen!2sin"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="MBR Trust Location - Vishnu Nagar, Chembur, Mumbai"
+              />
             </div>
           </div>
         </div>

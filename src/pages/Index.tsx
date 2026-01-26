@@ -1,6 +1,7 @@
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, Clock, Award, Users, Wrench, Zap, Droplet, PaintBucket, Wind, Hammer, Building, Trash2 } from "lucide-react";
+import { ArrowRight, Shield, Clock, Award, Users, Wrench, Zap, Droplet, PaintBucket, Wind, Hammer, Building, Trash2, ChevronLeft, ChevronRight } from "lucide-react";
 import Layout from "@/components/Layout";
 
 const services = [
@@ -29,7 +30,49 @@ const features = [
   { icon: Users, title: "Expert Team", desc: "Skilled workforce with decades of combined experience" },
 ];
 
+const testimonials = [
+  {
+    name: "Rajesh Sharma",
+    role: "Business Owner, Mumbai",
+    initials: "RS",
+    rating: 5,
+    quote: "MBR Vastukalp transformed our office space beautifully. Their attention to detail and commitment to quality is unmatched. Highly recommended!"
+  },
+  {
+    name: "Priya Mehta",
+    role: "Homeowner, Thane",
+    initials: "PM",
+    rating: 5,
+    quote: "Exceptional service from start to finish. The team was professional, on-time, and delivered beyond our expectations. Our home renovation was seamless!"
+  },
+  {
+    name: "Amit Kumar",
+    role: "Property Developer, Navi Mumbai",
+    initials: "AK",
+    rating: 5,
+    quote: "Working with MBR Vastukalp was a pleasure. They understood our vision perfectly and executed it flawlessly. True professionals with a passion for excellence."
+  }
+];
+
 const Index = () => {
+  const [currentTestimonial, setCurrentTestimonial] = useState(0);
+
+  // Auto-rotate testimonials every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
+  const nextTestimonial = () => {
+    setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+  };
+
+  const prevTestimonial = () => {
+    setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+  };
+
   return (
     <Layout>
       {/* Hero Section */}
@@ -170,6 +213,87 @@ const Index = () => {
                   </Button>
                 </Link>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+              What Our Clients Say
+            </h2>
+            <p className="text-muted-foreground max-w-2xl mx-auto">
+              Don't just take our word for it - hear from our satisfied clients
+            </p>
+          </div>
+
+          {/* Carousel Container */}
+          <div className="relative max-w-4xl mx-auto">
+            {/* Testimonial Card */}
+            <div className="bg-card rounded-xl shadow-strong p-8 md:p-12 min-h-[320px] flex flex-col justify-between">
+              {/* Stars */}
+              <div className="flex items-center justify-center gap-1 mb-6">
+                {[1, 2, 3, 4, 5].map((star) => (
+                  <svg key={star} className="w-6 h-6 text-secondary fill-current" viewBox="0 0 20 20">
+                    <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
+                  </svg>
+                ))}
+              </div>
+
+              {/* Quote */}
+              <p className="text-muted-foreground italic mb-8 leading-relaxed text-center text-lg md:text-xl">
+                "{testimonials[currentTestimonial].quote}"
+              </p>
+
+              {/* Customer Info */}
+              <div className="flex items-center justify-center gap-4">
+                <div className="w-14 h-14 bg-gradient-primary rounded-full flex items-center justify-center text-primary-foreground font-bold text-lg">
+                  {testimonials[currentTestimonial].initials}
+                </div>
+                <div>
+                  <h4 className="font-semibold text-foreground text-lg">
+                    {testimonials[currentTestimonial].name}
+                  </h4>
+                  <p className="text-sm text-muted-foreground">
+                    {testimonials[currentTestimonial].role}
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Navigation Buttons */}
+            <button
+              onClick={prevTestimonial}
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 md:-translate-x-12 w-12 h-12 bg-card rounded-full shadow-strong flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-all duration-300 group"
+              aria-label="Previous testimonial"
+            >
+              <ChevronLeft className="w-6 h-6 group-hover:scale-110 transition-transform" />
+            </button>
+
+            <button
+              onClick={nextTestimonial}
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 md:translate-x-12 w-12 h-12 bg-card rounded-full shadow-strong flex items-center justify-center hover:bg-secondary hover:text-secondary-foreground transition-all duration-300 group"
+              aria-label="Next testimonial"
+            >
+              <ChevronRight className="w-6 h-6 group-hover:scale-110 transition-transform" />
+            </button>
+
+            {/* Indicators */}
+            <div className="flex items-center justify-center gap-2 mt-8">
+              {testimonials.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentTestimonial(index)}
+                  className={`h-2 rounded-full transition-all duration-300 ${index === currentTestimonial
+                      ? "w-8 bg-secondary"
+                      : "w-2 bg-muted-foreground/30 hover:bg-muted-foreground/50"
+                    }`}
+                  aria-label={`Go to testimonial ${index + 1}`}
+                />
+              ))}
             </div>
           </div>
         </div>
