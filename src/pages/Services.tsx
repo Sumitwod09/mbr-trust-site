@@ -222,21 +222,21 @@ const Services = () => {
                 </div>
                 <div className={`rounded-2xl overflow-hidden ${index % 2 === 1 ? "md:order-1" : ""}`}>
                   <img
-                    src={`https://images.unsplash.com/photo-${index === 0 ? '1541888946425-d81bb19240f5' : // Civil Structure Repairing (Construction site)
-                        index === 1 ? '1504307651254-35680f356dfd' : // Demolition (Construction site/rubble)
-                          index === 2 ? '1581094794329-c8112a89af12' : // Civil Finishing (Tiling/Finishing)
-                            index === 3 ? '1560185127-6ed189bf02f4' : // POP & Gypsum (Ceiling work)
-                              index === 4 ? '1533090161767-e6ffed986c88' : // Carpentry (Woodworking)
-                                index === 5 ? '1621905251189-08b45d6a269e' : // Electrical (Wiring/Electrician)
-                                  index === 6 ? '1581092580497-e0d23cbdf1dc' : // HVAC (Ventilation)
-                                    index === 7 ? '1618221841713-169a718a156e' : // Wall Panelling (Interior wall)
-                                      index === 8 ? '1585704032915-c3b84eb9d6b7' : // Plumbing (Pipes)
-                                        index === 9 ? '1504917595217-d4dc5e61a84c' : // Fabrication (Welding)
-                                          index === 10 ? '1589939705384-518524827118' : // Painting (Wall painting)
-                                            index === 11 ? '1617103996702-96ff29b1c467' : // Polishing (Wood polishing)
-                                              index === 12 ? '1600585154340-be6161a56a0c' : // Modern Finishing (Interior)
-                                                '1503387762-592deb58ef4e'
-                      }?q=80&w=2070&auto=format&fit=crop`}
+                    src={index === 0 ? '/service/1.jpg' : // Civil Structure Repairing
+                        index === 1 ? '/service/2.jpg' : // Demolition
+                          index === 2 ? '/service/3.jpg' : // Civil Finishing
+                            index === 3 ? '/service/4.jpg' : // POP & Gypsum
+                              index === 4 ? '/service/5.jpg' : // Carpentry
+                                index === 5 ? '/service/6.jpg' : // Electrical
+                                  index === 6 ? '/service/7.jpg' : // HVAC
+                                    index === 7 ? '/service/8.jpg' : // Wall Panelling
+                                      index === 8 ? '/service/9.jpg' : // Plumbing
+                                        index === 9 ? '/service/10.jpg' : // Fabrication
+                                          index === 10 ? '/service/1.jpg' : // Painting
+                                            index === 11 ? '/service/11.jpg' : // Polishing
+                                              index === 12 ? '/service/12.jpg' : // Modern Finishing
+                                                '/service/1.jpg'
+                    }
                     alt={`${service.name} - MBR Vastukalp construction services`}
                     className="w-full h-full object-cover aspect-video"
                   />

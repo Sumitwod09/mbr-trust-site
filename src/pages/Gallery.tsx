@@ -2,15 +2,15 @@ import { useEffect, useState } from "react";
 import Layout from "@/components/Layout";
 
 const images = [
-  { src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2831&auto=format&fit=crop", caption: "Modern Building Exterior" },
-  { src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop", caption: "Luxury Interior Design" },
-  { src: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070&auto=format&fit=crop", caption: "Construction Site Progress" },
-  { src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2053&auto=format&fit=crop", caption: "Completed Residential Project" },
-  { src: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?q=80&w=2070&auto=format&fit=crop", caption: "Modern Kitchen Renovation" },
-  { src: "https://images.unsplash.com/photo-1600607687644-c7171b42498b?q=80&w=2070&auto=format&fit=crop", caption: "Commercial Building Facade" },
-  { src: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=2787&auto=format&fit=crop", caption: "Bathroom Renovation" },
-  { src: "https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop", caption: "Living Room Interior" },
-  { src: "https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?q=80&w=2070&auto=format&fit=crop", caption: "Office Space Design" },
+  { src: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=2070&auto=format&fit=crop", caption: "Project 1" },
+  { src: "https://images.unsplash.com/photo-1571896349842-b08586b5ea14?q=80&w=2070&auto=format&fit=crop", caption: "Project 2" },
+  { src: "https://images.unsplash.com/photo-1567538096051-b6643b25c45d?q=80&w=2070&auto=format&fit=crop", caption: "Project 3" },
+  { src: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=2070&auto=format&fit=crop", caption: "Project 4" },
+  { src: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=2070&auto=format&fit=crop", caption: "Project 5" },
+  { src: "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?q=80&w=2070&auto=format&fit=crop", caption: "Project 6" },
+  { src: "https://images.unsplash.com/photo-1598928506696-a575cf31de76?q=80&w=2070&auto=format&fit=crop", caption: "Project 7" },
+  { src: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop", caption: "Project 8" },
+  { src: "https://images.unsplash.com/photo-1586023492125-27b2c045b122?q=80&w=2070&auto=format&fit=crop", caption: "Project 9" },
 ];
 
 const Gallery = () => {
@@ -43,7 +43,7 @@ const Gallery = () => {
               aria-label={`Open image ${idx + 1}`}
             >
               <img src={item.src} alt={item.caption} className="w-full h-48 object-cover rounded-md transform group-hover:scale-105 transition-transform" />
-              <span className="mt-2 text-sm text-muted-foreground">{item.caption}</span>
+
             </button>
           ))}
         </div>
@@ -62,7 +62,7 @@ const Gallery = () => {
                 ✕
               </button>
               <img src={images[selected].src} alt={images[selected].caption} className="w-full h-[70vh] object-contain rounded" />
-              <div className="mt-2 text-center text-sm text-muted-foreground">{images[selected].caption}</div>
+
             </div>
           </div>
         )}
