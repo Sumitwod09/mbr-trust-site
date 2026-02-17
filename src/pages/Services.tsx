@@ -7,6 +7,7 @@ const services = [
   {
     icon: Building,
     name: "Civil Structure Repairing",
+    image: "/service/civil_structure_repairing.jpg",
     description: "Expert structural repairs and reinforcement services for buildings of all types. We diagnose and fix structural issues with precision and quality materials.",
     features: [
       "Micro Concreting",
@@ -20,6 +21,7 @@ const services = [
   {
     icon: Trash2,
     name: "Demolition",
+    image: "/service/demolition.jpg",
     description: "Safe, efficient, and environmentally responsible demolition services. From selective interior demolition to complete structure removal with proper debris management.",
     features: [
       "Civil Structure Demolition (Slab, Beam, Column, Flooring)",
@@ -34,6 +36,7 @@ const services = [
   {
     icon: Hammer,
     name: "Civil Finishing Work",
+    image: "/service/civil_finishing.jpg",
     description: "High-quality civil finishing services that transform your space with precision and attention to detail. Expert installation and craftsmanship.",
     features: [
       "Tile & Marble Installation Section",
@@ -46,6 +49,7 @@ const services = [
   {
     icon: Layers,
     name: "POP & Gypsum Work",
+    image: "/service/pop_&_gypsum.png",
     description: "Professional POP and gypsum solutions for modern interiors. Creating stunning aesthetic spaces with custom designs and textures.",
     features: [
       "POP Wall Punning",
@@ -59,6 +63,7 @@ const services = [
   {
     icon: Sofa,
     name: "Carpentry & Loose Furniture Work",
+    image: "/service/carpentry.jpg",
     description: "Fine carpentry services including custom furniture, modular solutions, and decorative woodwork tailored to your specifications.",
     features: [
       "Loose Furniture (Custom)",
@@ -77,6 +82,7 @@ const services = [
   {
     icon: Zap,
     name: "Electrical Work (Residential & Commercial)",
+    image: "/service/electrical.jpg",
     description: "Complete electrical solutions from new installations to repairs and upgrades. Our certified electricians ensure safety, efficiency, and compliance.",
     features: [
       "Power Wiring & Conductivity",
@@ -89,6 +95,7 @@ const services = [
   {
     icon: Wind,
     name: "HVAC",
+    image: "/service/hvac.jpg",
     description: "Heating, ventilation, and air conditioning services. Installation, repair, and maintenance for optimal indoor comfort and energy efficiency.",
     features: [
       "AC installation",
@@ -101,6 +108,7 @@ const services = [
   {
     icon: Home,
     name: "Modern Wall Panelling",
+    image: "/service/wall_panelling.jpg",
     description: "Contemporary wall paneling solutions for accent walls and interior design enhancement. Multiple material options with professional installation.",
     features: [
       "PVC wall Panelling",
@@ -113,6 +121,7 @@ const services = [
   {
     icon: Droplet,
     name: "Plumbing (Residential & Commercial)",
+    image: "/service/plumbing.jpg",
     description: "Professional plumbing services for residential and commercial properties. Expert installation, repair, and maintenance of all water supply systems.",
     features: [
       "Sanitary Water Supply Line",
@@ -124,6 +133,7 @@ const services = [
   {
     icon: Wrench,
     name: "Fabrication Work",
+    image: "/service/fabrication.jpg",
     description: "Custom metal and structural fabrication services for architectural elements, safety features, and space optimization solutions.",
     features: [
       "Mezzanine Floor Making",
@@ -136,6 +146,7 @@ const services = [
   {
     icon: PaintBucket,
     name: "Painting (Exterior & Interior)",
+    image: "/service/painting.jpg",
     description: "Transform your space with our professional painting services. Interior and exterior painting with premium quality finishes and expert application.",
     features: [
       "Primar Paintwork",
@@ -149,6 +160,7 @@ const services = [
   {
     icon: Paintbrush,
     name: "Polishing (Exterior & Interior)",
+    image: "/service/polishing.jpg",
     description: "Expert polishing services for furniture and surfaces with premium finish quality. Enhance beauty and durability with professional techniques.",
     features: [
       "PU Polish Work",
@@ -161,6 +173,7 @@ const services = [
   {
     icon: Sparkles,
     name: "Modern Finishing Work",
+    image: "/service/modern_finishing.jpg",
     description: "Contemporary finishing solutions for floors and surfaces. Premium materials and expert installation for lasting beauty and functionality.",
     features: [
       "Frosted Film",
@@ -219,26 +232,12 @@ const Services = () => {
                     </Button>
                   </Link>
                 </div>
-                <div className={`rounded-2xl overflow-hidden ${index % 2 === 1 ? "md:order-1" : ""}`}>
-                  <div className="w-full aspect-video min-h-[200px] md:min-h-[300px]">
+                <div className={`rounded-2xl overflow-hidden shadow-xl ${index % 2 === 1 ? "md:order-1" : ""}`}>
+                  <div className="w-full aspect-[4/3] md:aspect-square lg:aspect-[4/3]">
                     <img
-                      src={index === 0 ? '/service/1.jpg' : // Civil Structure Repairing
-                        index === 1 ? '/service/2.jpg' : // Demolition
-                          index === 2 ? '/service/3.jpg' : // Civil Finishing
-                            index === 3 ? '/service/4.png' : // POP & Gypsum
-                              index === 4 ? '/service/4.jpg' : // Carpentry
-                                index === 5 ? '/service/5.jpg' : // Electrical
-                                  index === 6 ? '/service/6.jpg' : // HVAC
-                                    index === 7 ? '/service/7.jpg' : // Wall Panelling
-                                      index === 8 ? '/service/8.jpg' : // Plumbing
-                                        index === 9 ? '/service/9.jpg' : // Fabrication
-                                          index === 10 ? '/service/10.jpg' : // Painting
-                                            index === 11 ? '/service/11.jpg' : // Polishing
-                                              index === 12 ? '/service/12.jpg' : // Modern Finishing
-                                                '/service/13.jpg'
-                      }
+                      src={service.image}
                       alt={`${service.name} - MBR Vastukalp construction services`}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
                       loading="lazy"
                       decoding="async"
                     />
