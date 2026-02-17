@@ -2,15 +2,15 @@ import { useEffect, useState } from "react";
 import Layout from "@/components/Layout";
 
 const images = [
-  { src: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=2070&auto=format&fit=crop", caption: "Project 1" },
-  { src: "https://images.unsplash.com/photo-1571896349842-b08586b5ea14?q=80&w=2070&auto=format&fit=crop", caption: "Project 2" },
-  { src: "https://images.unsplash.com/photo-1567538096051-b6643b25c45d?q=80&w=2070&auto=format&fit=crop", caption: "Project 3" },
-  { src: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=2070&auto=format&fit=crop", caption: "Project 4" },
-  { src: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=2070&auto=format&fit=crop", caption: "Project 5" },
-  { src: "https://images.unsplash.com/photo-1600573472550-8090b5e0745e?q=80&w=2070&auto=format&fit=crop", caption: "Project 6" },
-  { src: "https://images.unsplash.com/photo-1598928506696-a575cf31de76?q=80&w=2070&auto=format&fit=crop", caption: "Project 7" },
-  { src: "https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=2070&auto=format&fit=crop", caption: "Project 8" },
-  { src: "https://images.unsplash.com/photo-1586023492125-27b2c045b122?q=80&w=2070&auto=format&fit=crop", caption: "Project 9" },
+  { src: "/gallery/1.jpg", caption: "Project 1" },
+  { src: "/gallery/2.jpg", caption: "Project 2" },
+  { src: "/gallery/3.jpg", caption: "Project 3" },
+  { src: "/gallery/4.jpg", caption: "Project 4" },
+  { src: "/gallery/5.jpg", caption: "Project 5" },
+  { src: "/gallery/6.jpg", caption: "Project 6" },
+  { src: "/gallery/7.jpg", caption: "Project 7" },
+  { src: "/gallery/8.jpg", caption: "Project 8" },
+  { src: "/gallery/9.jpg", caption: "Project 9" },
 ];
 
 const Gallery = () => {

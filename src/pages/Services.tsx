@@ -194,8 +194,7 @@ const Services = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className={`grid md:grid-cols-2 gap-8 items-center ${index % 2 === 1 ? "md:flex-row-reverse" : ""
-                  }`}
+                className="grid md:grid-cols-2 gap-8 items-center"
               >
                 <div className={index % 2 === 1 ? "md:order-2" : ""}>
                   <div className="flex items-center gap-4 mb-4">
@@ -221,25 +220,29 @@ const Services = () => {
                   </Link>
                 </div>
                 <div className={`rounded-2xl overflow-hidden ${index % 2 === 1 ? "md:order-1" : ""}`}>
-                  <img
-                    src={index === 0 ? '/service/1.jpg' : // Civil Structure Repairing
+                  <div className="w-full aspect-video min-h-[200px] md:min-h-[300px]">
+                    <img
+                      src={index === 0 ? '/service/1.jpg' : // Civil Structure Repairing
                         index === 1 ? '/service/2.jpg' : // Demolition
                           index === 2 ? '/service/3.jpg' : // Civil Finishing
-                            index === 3 ? '/service/4.jpg' : // POP & Gypsum
-                              index === 4 ? '/service/5.jpg' : // Carpentry
-                                index === 5 ? '/service/6.jpg' : // Electrical
-                                  index === 6 ? '/service/7.jpg' : // HVAC
-                                    index === 7 ? '/service/8.jpg' : // Wall Panelling
-                                      index === 8 ? '/service/9.jpg' : // Plumbing
-                                        index === 9 ? '/service/10.jpg' : // Fabrication
-                                          index === 10 ? '/service/1.jpg' : // Painting
+                            index === 3 ? '/service/4.png' : // POP & Gypsum
+                              index === 4 ? '/service/4.jpg' : // Carpentry
+                                index === 5 ? '/service/5.jpg' : // Electrical
+                                  index === 6 ? '/service/6.jpg' : // HVAC
+                                    index === 7 ? '/service/7.jpg' : // Wall Panelling
+                                      index === 8 ? '/service/8.jpg' : // Plumbing
+                                        index === 9 ? '/service/9.jpg' : // Fabrication
+                                          index === 10 ? '/service/10.jpg' : // Painting
                                             index === 11 ? '/service/11.jpg' : // Polishing
                                               index === 12 ? '/service/12.jpg' : // Modern Finishing
-                                                '/service/1.jpg'
-                    }
-                    alt={`${service.name} - MBR Vastukalp construction services`}
-                    className="w-full h-full object-cover aspect-video"
-                  />
+                                                '/service/13.jpg'
+                      }
+                      alt={`${service.name} - MBR Vastukalp construction services`}
+                      className="w-full h-full object-cover"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
                 </div>
               </div>
             ))}
